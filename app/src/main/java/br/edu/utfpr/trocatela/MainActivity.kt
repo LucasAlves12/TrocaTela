@@ -1,8 +1,10 @@
-package br.edu.utfpr.trocatela
+package br.edu.utfpr.trocatela_posmoveis_2023
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import br.edu.utfpr.trocatela.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,7 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-    fun btLancamentoOnClick(view: View) {
-
+    fun btLancamentoInicialOnClick(view: View) {
+        val intent = Intent( this, LancamentoActivity::class.java)
+        startActivity(  intent )
     }
 }
